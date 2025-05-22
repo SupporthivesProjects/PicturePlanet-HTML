@@ -93,6 +93,10 @@
         gap: 15px;
         margin-bottom: 0px;
     }
+    .contactu-bottom .btn-success {
+        height: 56px;
+        padding: 16px 20px
+    }
     
 }
 @media only screen and (min-width: 1000px) and (max-width:1080px) {
@@ -110,6 +114,10 @@
         display: flex;
         gap: 15px;
         margin-bottom: 0px;
+    }
+    .contactu-bottom .btn-success {
+        height: 56px;
+        padding: 16px 26px
     }
    
 }

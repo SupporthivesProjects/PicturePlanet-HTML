@@ -195,8 +195,347 @@ html, body{
     padding:0px 0px;
     margin-bottom:16px
 }
+/* ----------------------------contactuspage------------------- */
+.contactus-main{
+  display: flex;
+  width: 590px;
+  padding: 32px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  border-radius: 8px;
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  margin-left: 60px;
+}
+.contactus-main .form-control{
+  color: var(--Grayscale-800---Darkest, #434343);
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  display: flex;
+  height: 54px;
+  padding: 16px 24px 16px 32px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  border-radius: 0px;
+  margin-bottom: 24px;
+}
+.contactus-main textarea{
+  display: flex;
+  height: 123px;
+  padding: 16px 24px 16px 32px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  color: var(--Grayscale-800---Darkest, #434343);
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+}
+::placeholder{
+  color: var(--Grayscale-800---Darkest, #434343) !important;
+}
+.contaus-sub-main h2{
+    color: var(--Primary, #005928);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.contaus-sub-main h5{
+  color: var(--Dark-Green, #032703);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin-bottom: 0px;
+}
+.contaus-sub-main p{
+  color: var(--Dark-Green, #032703);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.contaus-sub-main{
+  margin-bottom: 24px;
+}
+.form-check label {
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding-left: 16px;
+  margin-top: 3px;
+}
+.form-check label a{
+  color: var(--Primary, #005928);
 
-/* ---------------------------main page---------------------- */
+  /* P/Std */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration: none;
+}
+.form-check{
+  margin: 24px 0px;
+}
+.form-check input {
+  border: 1.5px solid #005928;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  border-radius: 100% !important;
+}
+.form-check-input:checked[type=checkbox] {
+  background: #fff;
+  border-color: #005927;
+}
+.form-check-input[type=checkbox]::after{
+  content: "";
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 100%;
+  max-width: 100%;
+  left: 0px;
+  right: 0px;
+  top: 4px;
+  margin: auto;
+}
+.form-check-input:checked[type=checkbox]::after{
+  content: "";
+  background: #005928;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 100%;
+  max-width: 100%;
+  left: 0px;
+  right: 0px;
+  top: 4px;
+  margin: auto;
+
+}
+.btn-warp-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+.btn-warp-div .btnvisite{
+  border: 1px solid rgba(55, 164, 79, 0.30);
+  background: rgba(55, 164, 79, 0.10);
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 0px;
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  display: flex;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 226px;
+  max-width: 100%;
+}
+.btn-warp-div  p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+.btn-warp-div  .btn-success{
+  display: flex;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  color: #FFF; 
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  width: 226px;
+  max-width: 100%;
+}
+.video-content-main{
+  position: relative;
+  padding: 59px 0px;
+}
+.contactus-banner{
+  padding: 24px 24px;
+  margin-top: 122px;
+}
+.contactu-bottom{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactu-bottom .btn-success{
+    background: var(--Primary, #005928);
+    box-shadow: 0px 1px 2px 0px rgba(27, 62, 14, 0.25), 0px 0px 0px 1px #0E7413 inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px -1px 1px 1px rgba(62, 170, 35, 0.25) inset;
+    display: flex;
+    height: 56px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: capitalize;
+    border-radius: 0px;
+    width: 236px;
+    max-width: 100%;
+    margin: auto;
+}
+.contactu-bottom h2{
+  color: var(--Base-White, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+/* ---------------------------tc page---------------------- */
+.legal-content-main{
+  /* background: url(../media/tc-body-bg.png) no-repeat; */
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  background-position: center center;
+  background-size: cover;
+  padding: 64px 0px 32px;
+  border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+  position: relative;
+  z-index: 1;
+}
+.legal-content-main::after{
+  content: "";
+  background: url(../media/tc-right.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 429px;
+  height: 347px;
+  z-index: -1;
+}
+.legal-content-main::before {
+  content: "";
+  background: url(../media/tc-left.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 429px;
+  height: 347px;
+  z-index: -1;
+}
+.legal-content h2{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.legal-content h4{
+  color: var(--Grayscale-800---Darkest, #434343);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.legal-content p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+
+  /* P/Std */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 32px;
+}
+.legal-content{
+  width: 1256px;
+  margin: auto;
+  max-width: 100%;
+}
+.legal-main {
+  padding: 40px 40px;
+  margin-top: 121px;
+}
 .errormain-page{
   height: 100vh;
   display: flex;
