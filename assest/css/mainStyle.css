@@ -195,6 +195,388 @@ html, body{
     padding:0px 0px;
     margin-bottom:16px
 }
+/* ---------------------------homepage------------------------- */
+.most-poppural{
+  padding: 0px 24px;
+}
+.most-poppural .div-bg-colr{
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  padding: 80px 24px;
+}
+.most-popoular-title h1{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.most-popoular-title p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 0px;
+}
+.most-popoular-title {
+  margin-bottom: 24px;
+}
+.nav-pills{
+  border: 1px solid var(--Primary, #005928);
+  background: var(--Grayscale-White, #FFF);
+  width: 593px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 56px;
+}
+.nav-pills .nav-item .nav-link{ 
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  padding: 8px 40px;
+  border-radius: 0px;
+}
+.nav-pills .nav-link.active{
+  background: var(--Primary, #005928);
+  color: #fff !important;
+}
+.img-fluid-flter .filter-box{
+  display: flex;
+  width: 1272px;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 100%;
+  margin: auto;
+}
+.most-poppural .btn{
+  width: 178px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 56px;
+}
+.price-creator-section{
+  height: 805px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px 80px;
+}
+.price-img-left{
+  position: absolute;
+  left: 0px;
+  width: 403px;
+  height: 402px;
+  bottom: 6rem;
+  z-index: -1;
+}
+.price-img-right{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 403px;
+  height: 402px;
+}
+.price-creator-section::after{
+  content: "";
+  background: url(../media/pricing-top-img.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  height: 469px;
+  width: 650px;
+  z-index: -1;
+}
+.pricing-content{
+  padding: 80px 0px 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 709px;
+}
+.price-video video {
+  width: 581px;
+  height: 483px;
+  max-width: 100%;
+  margin-top: 14rem;
+}
+.pricing-content h2{
+  color: var(--Primary, #005928);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom:8px
+}
+.pricing-content h2 span{
+  color: var(--Primary, #005928);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom:8px
+}
+.pricing-content p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.pricing-content .btn{
+  width: 315px;
+  max-width: 100%;
+  padding: 0px 8px;
+  height: 56px;
+}
+.home-gaqs-section {
+  padding: 80px 0px;
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  margin-bottom: 64px;
+}
+.col-question-still{
+  display: flex;
+  padding: 32px 32px 32px 56px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 0px;
+}
+.col-question-still h3{
+  color: var(--Grayscale-800---Darkest, #434343);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+.col-question-still .btn{
+  width: 227px;
+  max-width: 100%;
+}
+.home-faqs-title{
+  width: 590px;
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 64px;
+}
+.home-faqs-title h1{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.home-gaqs-section .row{
+  margin-bottom: 8px;
+}
+.home-faqs-title p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.faq-title-details h3{
+  color: var(--Grayscale-800---Darkest, #434343);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  padding: 0px 21px;
+}
+.faq-title-details p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 0px;
+}
+.faq-title-details {
+  margin-bottom: 56px;
+  width: 405px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 56px;
+}
+.home-bottom-setion{
+    max-width: 1920px;
+    padding: 32px 0px;
+    height: 634px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home-bottom-setion::before {
+  content: "";
+  background: url(../media/home-left-tree.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: 0px;
+  width: 398px;
+  height: 469px;
+  top: -35px;
+}
+.home-bottom-setion-main{
+  background: #fff;
+}
+.img-collection {
+  position: relative;
+  text-align: end;
+}
+.img-collection::after {
+  content: "";
+  background: url(../media/tree-img.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: -11rem;
+  left: -12px;
+  width: 553px;
+  height: 559px;
+  z-index: -1;
+}
+.img-collection video{
+  width: 748px;
+  height: 368px;
+  object-fit: cover;
+  margin-top: 12px;
+}
+.img-collection img{
+  margin-right: 0px;
+}
+.unlock-the-plante-img {
+  position: absolute;
+  bottom: 32px;
+  right: 0px;
+  width: 847px;
+  height: 634px;
+}
+.circle-div{
+  display: flex;
+  width: 212px;
+  height: 208px;
+  padding: 56px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 5px solid #FFF;
+  background: #FFD25D;
+  position: absolute;
+  z-index: 1;
+  top: 137px;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  right: 0px;
+  left: 263px;
+  margin: auto;
+}
+.circle-div h1{
+  color: #1A1A1A;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+.circle-div p{
+  color: #1A1A1A;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 0xp;
+}
+.unlock-the-planet h2{
+  color: var(--Primary, #005928);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  padding-right: 27px;
+  margin-bottom:8px;
+}
+.unlock-the-planet p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+.unlock-the-planet .btn {
+  width: 342px;
+}
+.unlock-the-planet{
+  width: 650px;
+  max-width: 100%;
+}
+
+
 /* ----------------------------contactuspage------------------- */
 .contactus-main{
   display: flex;
