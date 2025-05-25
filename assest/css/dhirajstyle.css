@@ -1,0 +1,290 @@
+/* INDIVIDUAL PAGE */
+
+.indi_page {
+    padding-bottom: 0px;
+    padding-top: 122px;
+}
+
+.left_img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px 61px 50px 62px;
+    background: var(--Grayscale-200---Near-White, #FAFAFA);
+}
+
+.imgg_box {
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.05), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04), 0px 20px 13px 0px rgba(0, 0, 0, 0.04), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.03), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.0)
+}
+
+
+.inner_cont_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    margin-left: 80px;
+    margin-right: auto;
+    width: 640px;
+}
+
+.in_upper_bx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.btn_cat {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 40px;
+    background-color: var(--Base-Off-Black, #0F0F0F);
+    color: var(--Base-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: "AvantGardeMdITC";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.btn_cat:hover {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 40px;
+    background-color: var(--Base-Off-Black, #0F0F0F);
+    color: var(--Base-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: "AvantGardeMdITC";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.right_content {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.indi_title {
+    color: var(--Primary, #005928);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.indi_sub {
+    color: var(--Grayscale-600---Dark, #8A8A8A);
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 0px;
+}
+
+.three_btns {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.btn_grey {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    color: var(--Grayscale-Near-Black, #0E0E0E);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    border-radius: 40px !important;
+    background: var(--Grayscale-400---Lighter, #E4E4E4);
+}
+
+.btn_grey:hover {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    color: var(--Grayscale-Near-Black, #0E0E0E);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    border-radius: 40px !important;
+    background: var(--Grayscale-400---Lighter, #E4E4E4);
+}
+
+.btn_two_bx {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn_back {
+    border: 1px solid rgba(55, 164, 79, 0.30);
+    background: rgba(55, 164, 79, 0.10);
+    display: flex;
+    height: 56px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    color: var(--Primary, #005928);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    border-radius: 0px;
+
+}
+
+
+.btn_log {
+    background: var(--Primary, #005928);
+    box-shadow: 0px 1px 2px 0px rgba(27, 62, 14, 0.25), 0px 0px 0px 1px #0E7413 inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px -1px 1px 1px rgba(62, 170, 35, 0.25) inset;
+    display: flex;
+    height: 56px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+
+}
+
+.paymet_failed_modal {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+    box-shadow: 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04), 0px 20px 13px 0px rgba(0, 0, 0, 0.04), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.03), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
+}
+
+.mody_bx {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+}
+
+.mody_bx img {
+    position: absolute;
+    right: -24px;
+    top: -24px;
+}
+
+
+.mod_heads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    max-width: 374px;
+    margin: auto;
+}
+
+.mo_subb {
+    color: var(--Dark-Green, #032703);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+    margin-bottom: 0px;
+}
+
+.mo_sbtitle {
+    color: var(--Grayscale-600---Dark, #8A8A8A);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 0px;
+
+}
+
+.gree_sub {
+    color: var(--Primary, #005928);
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 0px;
+}
+
+
+.forget_content2 {
+    width: 100%;
+    max-width: 454px;
+    border-radius: 0px !important;
+}
+
+.log_title {
+    color: var(--Primary, #005928);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 38.4px */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
