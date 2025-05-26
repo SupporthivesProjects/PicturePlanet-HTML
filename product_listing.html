@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicturePlanet</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assest/css/aos.css">
+    <link rel="stylesheet" href="./assest/css/mainStyle.css">
+    <link rel="stylesheet" href="./assest/css/middev.css">
+    <link rel="stylesheet" href="./assest/css/mainResponsive.css">
+    <link rel="stylesheet" href="./assest/css/m_style.css">
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container p-mo-0">
+                <div class="nav-brand-mo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assest/media/Logo.svg" alt="" class="img-fluid d-lg-block d-md-block d-none">
+                        <img src="./assest/media/logo-mo.svg" alt="" class="img-fluid d-lg-none d-md-none d-block">
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon-mo">
+                            <img src="./assest/media/Menu-Button.svg" alt="" srcset="" class="img-fluid">
+                        </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Browse</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ’s</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                $ USD
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-curency" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item active" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex right-side-menu">
+
+                        <button class="btn btn-success"> Login/register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="product_listing">
+        <div class="pls1">
+            <!-- <div class="container"> -->
+                <div class="pls1_content">
+                    <h3 class="pls1_title">Browse images</h3>
+                    <div class="pls1_r1">
+                        <div class="pls1_r1_l">
+                            <input type="text" class="form-control input_search" placeholder="Start typing here..."
+                                id="">
+                            <button class="btn btn_search">search</button>
+                        </div>
+                        <div class="pls1_r1_r mobile_none">
+                            <div class="pro_filter_drop_container">
+                                <button class="btn btn_pro_filter" onclick="filterDrop('filter_drop1', 'roter1')">
+                                    <div>Sort by <span>Relevance</span></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="roter1" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_9368_2824)">
+                                            <path
+                                                d="M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z"
+                                                fill="#0E0E0E"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_9368_2824">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <div class="filter_drop_div d-none" id="filter_drop1">
+                                    <button class="btn filter_drop_div_btns">Relevance</button>
+                                    <div class="filter_bar"></div>
+                                    <button class="btn filter_drop_div_btns">Newest to oldest</button>
+                                    <div class="filter_bar"></div>
+                                    <button class="btn filter_drop_div_btns">A - z</button>
+                                    <div class="filter_bar"></div>
+                                    <button class="btn filter_drop_div_btns">z - A</button>
+                                    <div class="filter_bar"></div>
+                                </div>
+                            </div>
+                            <div class="pro_filter_drop_container">
+                                <button class="btn btn_pro_filter" onclick="filterDrop('filter_drop2', 'roter2')">
+                                    <div>Orientation <span>All</span></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="roter2" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_9368_2824)">
+                                            <path
+                                                d="M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z"
+                                                fill="#0E0E0E"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_9368_2824">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <div class="filter_drop_div d-none" id="filter_drop2">
+                                    <button class="btn filter_drop_div_btns">Relevance</button>
+                                    <div class="filter_bar"></div>
+                                    <button class="btn filter_drop_div_btns">Newest to oldest</button>
+                                    <div class="filter_bar"></div>
+                                    <button class="btn filter_drop_div_btns">A - z</button>
+                                    <div class="filter_bar"></div>
+                                    <button class="btn filter_drop_div_btns">z - A</button>
+                                    <div class="filter_bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pls1_r2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button id="btn_tab_of_Nature" data-bs-toggle="pill" data-bs-target="#tab_for_Nature"
+                            type="button" class="btn btn_tab active" role="tab" aria-controls="tab_for_Nature"
+                            aria-selected="true">Nature <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_business" data-bs-toggle="pill" data-bs-target="#tab_for_business"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_business"
+                            aria-selected="false" tabindex="-1">business <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_people" data-bs-toggle="pill" data-bs-target="#tab_for_people"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_people"
+                            aria-selected="false" tabindex="-1">people <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_animals" data-bs-toggle="pill" data-bs-target="#tab_for_animals"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_animals"
+                            aria-selected="false" tabindex="-1">animals <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_toys" data-bs-toggle="pill" data-bs-target="#tab_for_toys" type="button"
+                            class="btn btn_tab" role="tab" aria-controls="tab_for_toys" aria-selected="false"
+                            tabindex="-1">toys <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_sky" data-bs-toggle="pill" data-bs-target="#tab_for_sky" type="button"
+                            class="btn btn_tab" role="tab" aria-controls="tab_for_sky" aria-selected="false"
+                            tabindex="-1">sky <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_tech" data-bs-toggle="pill" data-bs-target="#tab_for_tech" type="button"
+                            class="btn btn_tab" role="tab" aria-controls="tab_for_tech" aria-selected="false"
+                            tabindex="-1">tech <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_groups" data-bs-toggle="pill" data-bs-target="#tab_for_groups"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_groups"
+                            aria-selected="false" tabindex="-1">groups <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_travel" data-bs-toggle="pill" data-bs-target="#tab_for_travel"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_travel"
+                            aria-selected="false" tabindex="-1">travel <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_summer" data-bs-toggle="pill" data-bs-target="#tab_for_summer"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_summer"
+                            aria-selected="false" tabindex="-1">summer <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_buildings" data-bs-toggle="pill" data-bs-target="#tab_for_buildings"
+                            type="button" class="btn btn_tab" role="tab" aria-controls="tab_for_buildings"
+                            aria-selected="false" tabindex="-1">buildings <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                        <button id="btn_tab_of_food" data-bs-toggle="pill" data-bs-target="#tab_for_food" type="button"
+                            class="btn btn_tab" role="tab" aria-controls="tab_for_food" aria-selected="false"
+                            tabindex="-1">food <img src="./assest/media/cross_x.svg" alt="" class="img-fluid"></button>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="pls2">
+            <div class="pls2_content">
+                <div class="desktop_none">
+                    <div class="pls1_r1_r">
+                        <div class="pro_filter_drop_container">
+                            <button class="btn btn_pro_filter" onclick="filterDrop('filter_drop3', 'roter3')">
+                                <div>Sort by <span>Relevance</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter3" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_9368_2824)">
+                                        <path
+                                            d="M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z"
+                                            fill="#0E0E0E"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_9368_2824">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <div class="filter_drop_div d-none" id="filter_drop3">
+                                <button class="btn filter_drop_div_btns">Relevance</button>
+                                <div class="filter_bar"></div>
+                                <button class="btn filter_drop_div_btns">Newest to oldest</button>
+                                <div class="filter_bar"></div>
+                                <button class="btn filter_drop_div_btns">A - z</button>
+                                <div class="filter_bar"></div>
+                                <button class="btn filter_drop_div_btns">z - A</button>
+                                <div class="filter_bar"></div>
+                            </div>
+                        </div>
+                        <div class="pro_filter_drop_container">
+                            <button class="btn btn_pro_filter" onclick="filterDrop('filter_drop4', 'roter4')">
+                                <div>Orientation <span>All</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter4" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_9368_2824)">
+                                        <path
+                                            d="M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z"
+                                            fill="#0E0E0E"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_9368_2824">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <div class="filter_drop_div d-none" id="filter_drop4">
+                                <button class="btn filter_drop_div_btns">Relevance</button>
+                                <div class="filter_bar"></div>
+                                <button class="btn filter_drop_div_btns">Newest to oldest</button>
+                                <div class="filter_bar"></div>
+                                <button class="btn filter_drop_div_btns">A - z</button>
+                                <div class="filter_bar"></div>
+                                <button class="btn filter_drop_div_btns">z - A</button>
+                                <div class="filter_bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="container"> -->
+                <p class="pls2_text_top"><span>30</span> images found.</p>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="tab_for_Nature" role="tabpanel"
+                        aria-labelledby="btn_tab_of_Nature" tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_business" role="tabpanel"
+                        aria-labelledby="btn_tab_of_business" tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_people" role="tabpanel" aria-labelledby="btn_tab_of_people"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_animals" role="tabpanel" aria-labelledby="btn_tab_of_animals"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_toys" role="tabpanel" aria-labelledby="btn_tab_of_toys"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_sky" role="tabpanel" aria-labelledby="btn_tab_of_sky"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_tech" role="tabpanel" aria-labelledby="btn_tab_of_tech"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_groups" role="tabpanel" aria-labelledby="btn_tab_of_groups"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_travel" role="tabpanel" aria-labelledby="btn_tab_of_travel"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_summer" role="tabpanel" aria-labelledby="btn_tab_of_summer"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_buildings" role="tabpanel"
+                        aria-labelledby="btn_tab_of_buildings" tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab_for_food" role="tabpanel" aria-labelledby="btn_tab_of_food"
+                        tabindex="0">
+                        <div class="img_tab">
+                            <img src="./assest/media/imc1.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc2.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc3.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc4.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc5.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc6.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc7.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc8.png" alt="" class="img-fluid">
+                            <img src="./assest/media/imc9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination_container">
+                    <!-- Previous Button -->
+                    <button class="btn pagination_arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 7.41L11.42 12L16 16.59L14.59 18L8.59 12L14.59 6L16 7.41Z" fill="white"/>
+                        </svg>
+                    </button>
+                  
+                    <!-- Page Numbers -->
+                    <div class="page_num_container">
+                        <button class="btn page_number active">1</button>
+                        <button class="btn page_number">2</button>
+                        <button class="btn page_number">3</button>
+                        <button class="btn page_number">...</button>
+                        <button class="btn page_number">8</button>
+                        <button class="btn page_number">9</button>
+                        <button class="btn page_number">10</button>
+                    </div>
+                  
+                    <!-- Next Button -->
+                    <button class="btn pagination_arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 7.41L12.58 12L8 16.59L9.41 18L15.41 12L9.41 6L8 7.41Z" fill="white"/>
+                        </svg>
+                    </button>
+                  </div>
+                  
+            <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer position-relative">
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <img src="./assest/media/footer-logo.png" alt="" class="img-fluid">
+                            </div>
+                            <ul>
+                                <li><a href="#">Browse</a></li>
+                                <li><a href="#">Pricing & Perks</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">FAQ's</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 p-mo-0">
+                        <div class="footer-right">
+                            <div class="d-none d-lg-block d-md-block">
+                                <img src="./assest/media/Mastercard.png" class="img-fluid">
+                            </div>
+                            <div class="footer-details">
+                                <h6>Placeholder Company Name LLC/h6></h6>
+                                <p>
+                                    Office No. XX, Placeholder Street – Placeholder City
+                                </p>
+                                <p>Support@PicturePlanet.com, +11 123 4567 890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-border">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-12 col-md-6 order-1 order-lg-0">
+                            <div class="p-copy">
+                                <p>© 2025 <a href="">PicturePlanet</a>. All rights reserved.</p>
+                                <img src="./assest/media/Mastercard.png" class="img-fluid d-block d-md-none d-lg-none">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-12 col-md-6">
+                            <div class="footer-bottom-right">
+                                <ul>
+                                    <li><a href="">Terms</a></li>
+                                    <li><a href="">Privacy</a></li>
+                                    <li><a href="">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assest/js/jquery-3.7.1.min.js"></script>
+    <script src="./assest/js/owl.carousel.js"></script>
+    <script src="./assest/js/popper.min.js"></script>
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/swiper-bundle.min.js"></script>
+    <script src="./assest/js/aos.js"></script>
+    <script src="./assest/js/appmain.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+</body>
+
+</html>

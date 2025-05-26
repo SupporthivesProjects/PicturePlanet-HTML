@@ -29,4 +29,22 @@ toogleBtn.addEventListener('click',()=>{
 // sldier home page
 
 
+// filter dropdown
+
+function filterDrop(droperId, roterId) {
+    const theId = document.getElementById(droperId);
+    const theId2 = document.getElementById(roterId);
+
+
+    if (theId.classList.contains('d-none')) {
+        theId.classList.remove('d-none');
+        // element.classList.add("active")
+        theId2.style.rotate = '180deg';
+    } else {
+        theId.classList.add('d-none');
+        // element.classList.remove("active")
+        theId2.style.rotate = '0deg';
+    }
+}
+
 
