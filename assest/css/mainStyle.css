@@ -195,7 +195,537 @@ html, body{
     padding:0px 0px;
     margin-bottom:16px
 }
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent;
+}
+.category-img-link ul{
+  column-count: 3;
+  padding: 28px 36px;
+  border-radius: 0px;
+  overflow: scroll;
+}
+.category-img-link  .dropdown-menu {
+  position: absolute;
+  margin-top: 2.5rem;
+}
+/* ---------------------------homepage codepen------------------------- */
+.home-banner-section {
+  padding: 0px;
+  margin-top: 7rem;
+}
+.home-banner-content {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 659px;
+  max-width: 100%;
+  background: var(--Grayscale-White, #FFF);
+  box-shadow: 0px 146px 215px 0px rgba(0, 0, 0, 0.26), 0px 96.911px 125.914px 0px rgba(0, 0, 0, 0.18), 0px 63.537px 68.481px 0px rgba(0, 0, 0, 0.13), 0px 41.519px 34.938px 0px rgba(0, 0, 0, 0.11), 0px 26.496px 17.519px 0px rgba(0, 0, 0, 0.09), 0px 14.11px 8.461px 0px rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 0px;
+  left: 10rem;
+  bottom: 0px;
+  height: 608px;
+  max-width: 100%;
+  margin: auto;
+}
+.home-banner-box{
+  display: flex;
+  padding: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+  background: #FAFAFA;
+  width: 612px;
+  max-width: 100%;
+}
+.home-banner-box h1{
+  color: var(--Primary, #005928);
+  font-family: "DM Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.home-banner-box p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 26px;
+}
+.searchimgpu-home input{
+  display: flex;
+  width: 363px;
+  padding: 16px 8px 16px 24px;
+  align-items: center;
+  gap: 16px;
+  border: 0px;
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.form-flex{
+  display: flex;
+  gap: 8px;
+}
+.searchimgpu-home .btn{
+  background: var(--Primary, #005928);
+  box-shadow: 0px 1px 2px 0px rgba(27, 62, 14, 0.25), 0px 0px 0px 1px #0E7413 inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px -1px 1px 1px rgba(62, 170, 35, 0.25) inset;
+  display: flex;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 123px;
+  max-width: 100%;
+}
+
 /* ---------------------------homepage------------------------- */
+/* ---------------------------pricing-------------------------- */
+.price-section{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.col-price-content h1{
+  color: var(--Grayscale-White, #FFF);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.col-price-content p {
+  color: var(--Grayscale-300---Lightest, #F1F1F1);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.col-price-content{
+  width: 757px;
+  max-width: 100%;
+  margin: auto;
+}
+.price-card h2{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+.price-card h3{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.price-card p{
+  color: var(--Grayscale-Functional-Success-Green, #0D990D);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+.price-card .btn{
+  border: 1px solid rgba(55, 164, 79, 0.30);
+  background: rgba(55, 164, 79, 0.10);
+  display: flex;
+  width: 262px;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px;
+  width: 262px;
+  margin: auto;
+  max-width: 100%;
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+}
+.row-card .card{
+  display: flex;
+  padding: 32px 40px;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  border: 2px solid var(--Grayscale-300---Lightest, #F1F1F1);
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  border-radius: 0px;
+  margin: auto;
+  margin-bottom: 24px;
+  width: 342px;
+  height: 242px;
+  max-width: 100%;
+}
+.price-card.active{
+  border: 2px solid var(--Primary, #005928) !important;
+  background: var(--Grayscale-White, #FFF) !important;
+  box-shadow: 0px 0px 0px 7px rgba(35, 167, 44, 0.25) !important;
+}
+
+.row-card.row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.rowcredit{
+  margin-bottom: 56px;
+}
+.rowcredit h1{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.rowcredit p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom:0px
+}
+.rowcredit h6{
+  color: var(--Primary, #005928);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+}
+.btn-purchase{
+  width: 254px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 32px;
+}
+.custom-from input{
+  color: var(--Grayscale-800---Darkest, #434343);
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  display: flex;
+  height: 54px;
+  padding: 16px 24px 16px 32px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0px;
+  margin: auto;
+  margin-bottom: 24px;
+  width:600px;
+  max-width:100%;
+}
+.custom-price h2{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.custom-price p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 56px;
+}
+.custom-price{
+  border-radius: 8px;
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  padding: 80px 0px;
+}
+
+.custom-price p {
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+
+
+.custom-price p {
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0px 6px;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+.custom-price a{
+  color: var(--Primary, #005928) !important;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.custom-from .btn{
+  width:600px;
+  max-width:100%;
+  margin: auto;
+}
+.custom-from-title{
+  width: 664px;
+  max-width: 100%;
+  margin: auto;
+}
+.rewarded-title h1{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+.rewarded-title p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.rewarded-title{
+  width: 605px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 56px;
+}
+.reward-crile{
+  border-radius: 200px;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.reward-card h2{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+.reward-card p{
+  color: var(--Grayscale-Near-Black, #0E0E0E);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 8px 0px;
+}
+.reward-card .p-green{
+  color: var(--Grayscale-Functional-Success-Green, #0D990D);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0px;
+}
+.Rewarded-for-loyalty .card{
+  border-radius: 0px;
+  border: 0px;
+  width: 262px;
+  height: 256px;
+  max-width: 100%;
+  margin: auto;
+
+}
+.Rewarded-for-loyalty  .row{
+  margin-bottom: 80px;
+}
+.do-hove-question{
+  display: flex;
+  padding: 32px 32px 32px 56px;
+  background: var(--Grayscale-200---Near-White, #FAFAFA);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  margin: 40px 0px;
+}
+.do-hove-question h2{
+  color: var(--Grayscale-800---Darkest, #434343);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+.do-hove-question .btn-brder-green{
+  border: 1px solid rgba(55, 164, 79, 0.30);
+  background: rgba(55, 164, 79, 0.10);
+  display: flex;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius:0px;
+}
+.do-hove-question div{
+  display: flex;
+  gap: 24px;
+}
+.Rewarded-for-loyalty{
+  padding: 80px 0px 0px;
+}
+.modal-content{
+  border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+  background: var(--Grayscale-White, #FFF);
+  box-shadow: 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04), 0px 20px 13px 0px rgba(0, 0, 0, 0.04), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.03), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px;
+}
+.modal-content .btn-close{
+  position: absolute;
+  right: 22px;
+  top: 22px;
+}
+.modal-body h2{
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  padding: 0px 42px;
+  margin-bottom: 12px;
+}
+.modal-body p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.modal-body div .btn-border-col{
+  border: 1px solid rgba(55, 164, 79, 0.30);
+  background: rgba(55, 164, 79, 0.10);
+  display: flex;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  color: var(--Primary, #005928);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%; /* 36px */
+  text-transform: capitalize;
+  border-radius: 0px;
+}
+.modal-body div{
+  display: flex;
+  gap: 12px;
+}
+/* ------------------------------home---------------------------- */
 .most-poppural{
   padding: 0px 24px;
 }
@@ -232,7 +762,7 @@ html, body{
 .nav-pills{
   border: 1px solid var(--Primary, #005928);
   background: var(--Grayscale-White, #FFF);
-  width: 593px;
+  width: 594px;
   display: flex;
   justify-content: space-between;
   align-items: center;
