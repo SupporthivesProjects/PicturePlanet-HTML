@@ -366,12 +366,18 @@
         flex-direction: column;
         width: 327px;
         max-width: 100%;
+        margin: auto;
+    }
+    .searchimgpu-home {
+        position: relative;
+        width: 100%;
+        margin: auto;
     }
     .searchimgpu-home input {
         display: flex;
         width: 363px;
         max-width: 100%;
-        padding: 16px 8px 16px 24px;
+        padding: 16px 8px 16px 46px;
         align-items: center;
         gap: 16px;
         border: 0px;
@@ -380,6 +386,17 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
+    }
+    .searchimgpu-home ::after {
+        content: "";
+        background: url(../media/Button.svg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 14px;
+        top: 17px;
+        width: 24px;
+        height: 24px;
     }
     .searchimgpu-home .btn {
         background: var(--Primary, #005928);
@@ -851,6 +868,146 @@
     
     
     
+}
+@media screen and (max-width: 600px) {
+    .about-banner-section .about-banner-content {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        width: 827px;
+        height: fit-content;
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        box-shadow: none;
+    }
+    .about-banner-section .aboutsu-banner-text {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .what-do {
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    .what-content h1 {
+        color: var(--Grayscale-White, #FFF);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    }
+    .what-content p {
+        color: var(--Grayscale-300---Lightest, #F1F1F1);
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 185.836%;
+    }
+    .how-do-to {
+        padding: 64px 0px 40px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .how-do-to video {
+        width: 560px;
+        height: 616px;
+        position: absolute;
+        left: 0px;
+        top: 24px;
+        z-index: -1;
+        height: 281.457px;
+        width: 255.786px;
+    }
+    .how-do-to img {
+        height: 412px;
+        width: 338px;
+        margin-left: 209px;
+        width: 154.385px;
+        height: 188.247px;
+    }
+    .how-do-to-content h1 {
+        color: var(--Primary, #005928);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
+    .how-do-to-content {
+        width: 692px;
+        max-width: 100%;
+        margin: auto;
+        padding-top: 77px;
+        padding: 0px 8px;
+        padding-top: 73px;
+    }
+    .how-do-to::before{
+        display: none;
+    }
+    .how-do-to::after{
+        display: none;
+    }
+    .why-video {
+        border: 5px solid #FFF;
+        margin-bottom: 0rem;
+        width: 277.304px;
+        height: 199.772px;
+        object-fit: cover;
+        margin-left: -6rem;
+        margin-top: 6rem;
+    }
+    .why-we-do img {
+        position: absolute;
+        right: 0px;
+        top: 24px;
+        width: 581px;
+        height: 483px;
+        z-index: -1;
+        width: 247.867px;
+        height: 205.735px;
+    }
+    .why-we-do-content h1 {
+        color: var(--Primary, #005928);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
+    .why-we-do-content {
+        width: 650px;
+        max-width: 100%;
+        margin-top: 22px;
+    }
+    
+    .why-we-do {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 10px;
+    }
 }
 @media screen and (max-width: 600px) {
     .video-content-main .bg-image:not([class*=absolute]) {

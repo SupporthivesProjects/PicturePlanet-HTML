@@ -264,7 +264,7 @@ html, body{
 .searchimgpu-home input{
   display: flex;
   width: 363px;
-  padding: 16px 8px 16px 24px;
+  padding: 16px 8px 16px 58px;
   align-items: center;
   gap: 16px;
   border: 0px;
@@ -274,6 +274,21 @@ html, body{
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  
+}
+.searchimgpu-home{
+  position: relative;
+}
+.searchimgpu-home ::after{
+  content: "";
+  background: url(../media/Button.svg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: 24px;
+  top: 17px;
+  width: 24px;
+  height: 24px;
 }
 .form-flex{
   display: flex;
@@ -1104,6 +1119,186 @@ html, body{
 .unlock-the-planet{
   width: 650px;
   max-width: 100%;
+}
+/* -------------------------aboutus--------------------------- */
+.about-banner-section .aboutsu-banner-text{
+  display: flex;
+  padding: 64px;
+  flex-direction: column;
+  align-items: center;
+}
+.about-banner-section  .about-banner-content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 827px;
+  height: fit-content;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  box-shadow: 0px 146px 215px 0px rgba(0, 0, 0, 0.26), 0px 96.911px 125.914px 0px rgba(0, 0, 0, 0.18), 0px 63.537px 68.481px 0px rgba(0, 0, 0, 0.13), 0px 41.519px 34.938px 0px rgba(0, 0, 0, 0.11), 0px 26.496px 17.519px 0px rgba(0, 0, 0, 0.09), 0px 14.11px 8.461px 0px rgba(0, 0, 0, 0.06);
+}
+.aboutsu-banner-text{
+  width: 100%;
+}
+.how-do-to img {
+  /* border: 10px solid #FFF; */
+  height: 412px;
+  width: 338px;
+  margin-left: 105px;
+}
+.how-do-to {
+  padding: 64px 0px;
+  height: 745px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-do-to-content{
+  width: 692px;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 36px;
+}
+.how-do-to video{
+  width: 560px;
+  height: 616px;
+  position: absolute;
+  left: 0px;
+  top: 64px;
+  z-index: -1;
+}
+.how-do-to-content h1{
+  color: var(--Primary, #005928);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+.how-do-to-content p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.how-do-to::after {
+    content: "";
+    background: url(../media/how-do-img-after.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 402px;
+    height: 469px;
+}
+.how-do-to::before{
+  content: "";
+  background: url(../media/how-do-to-before.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: 20rem;
+  top: -5rem;
+  width: 561px;
+  height: 490px;
+  z-index: -1;
+}
+.what-do{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.what-content h1{
+  color: var(--Grayscale-White, #FFF);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.what-content{
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+}
+.what-content p {
+  color: var(--Grayscale-300---Lightest, #F1F1F1);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 185.836%;
+}
+.why-we-do-content h1{
+  color: var(--Primary, #005928);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+.why-we-do-content p{
+  color: var(--Grayscale-600---Dark, #8A8A8A);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.why-we-do-content .btn{
+  width: 234px;
+  color: #FFF;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  text-transform: capitalize;
+  max-width: 100%;
+  margin-top: 24px;
+}
+.why-video {
+  border: 10px solid #FFF;
+  height: 469px;
+  width: 650px;
+  margin-bottom: -9rem;
+}
+.why-we-do-content{
+  width: 650px;
+  max-width: 100%;
+  margin-top: -32px;
+}
+.why-we-do img{
+  position: absolute;
+  right: 0px;
+  top: 32px;
+  width: 581px;
+  height: 483px;
+  z-index: -1;
+}
+.why-we-do{
+  height: 709px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
