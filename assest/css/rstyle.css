@@ -12,6 +12,16 @@
 .dashboard_mainsec{
     margin-top: 122px;
 }
+.id_blue{
+    color: var(--Grayscale-Functional-Info-Blue, #2F85DE);
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: capitalize;
+    margin: 0px;
+}
 .dashboard_s1 {
     padding: 254px 0px 0px;
     position: absolute;
@@ -417,9 +427,9 @@
 }
 
 .history_cardtitle {
-    color: var(--Base-Off-Black, #0F0F0F);
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: "IBM Plex Sans";
+    color: var(--Primary, #005928);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -430,11 +440,11 @@
 }
 
 .history_cardsubtitle {
-    color: var(--Text, #667085);
-    font-family: "IBM Plex Sans";
+    color: var(--Grayscale-600---Dark, #8A8A8A);
+    font-family: "DM Sans";
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 160%;
     margin: 0px;
 }
