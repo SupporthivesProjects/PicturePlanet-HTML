@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicturePlanet</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assest/css/aos.css">
+    <link rel="stylesheet" href="./assest/css/mainStyle.css">
+    <link rel="stylesheet" href="./assest/css/rstyle.css">
+    <link rel="stylesheet" href="./assest/css/middev.css">
+    <link rel="stylesheet" href="./assest/css/mainResponsive.css">
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container p-mo-0">
+                <div class="nav-brand-mo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assest/media/Logo.svg" alt="" class="img-fluid d-lg-block d-md-block d-none">
+                        <img src="./assest/media/logo-mo.svg" alt="" class="img-fluid d-lg-none d-md-none d-block">
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon-mo">
+                            <img src="./assest/media/Menu-Button.svg" alt="" srcset="" class="img-fluid">
+                        </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Browse</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ’s</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                $ USD
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-curency" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item active" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                                <li><a class="dropdown-item" href="#">$USD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex right-side-menu">
+
+                        <button class="btn btn-success"> Login/register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard Start -->
+
+    <div class="dashboard_mainsec">
+        <div class="d-none d-sm-none d-md-block">
+            <video autoplay muted loop id="myVideo" class="">
+                <source src="./assest/media/dashboard_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="d-block d-md-none">
+            <video autoplay muted loop id="myVideo" class="w-100">
+                <source src="./assest/media/dashboard_viedomob.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- Section 1 Start -->
+        <section class="dashboard_s1">
+            <div class="dashboard_c1 container">
+                <div class="dashboard_titlebar">
+                    <h2 class="dashboard_title">Hello John,</h2>
+                    <p class="dashboard_subtitle">From here, you can update your details and password, view your wallet,
+                        access
+                        your download history, and check your invoices—all in one convenient place!</p>
+                    <button type="button" class="btn dashboard_signoutbtn">Signout</button>
+                </div>
+                <!-- Tab Button -->
+                <div class="dashboard_btnbar w-100">
+                    <!-- Desktop Tab Button -->
+                    <div class="dashboard_desktoptabbtn mobile_none">
+                        <div class="nav-tabs-container">
+                            <ul class="nav nav-pills dashboard_tabbar" id="pills-tab" role="tablist">
+                                <li class="nav-item col" role="presentation">
+                                    <button class="active dashboard_tabbtn w-100 month_1btn" id="pills-one-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab"
+                                        aria-controls="pills-one" aria-selected="true">Overview</button>
+                                </li>
+                                <li class="nav-item col" role="presentation">
+                                    <button class="dashboard_tabbtn w-100" id="pills-three-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-three" type="button" role="tab"
+                                        aria-controls="pills-three" aria-selected="false">My Details & Password</button>
+                                </li>
+                                <li class="nav-item col" role="presentation">
+                                    <button class="dashboard_tabbtn w-100" id="pills-six-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-six" type="button" role="tab" aria-controls="pills-six"
+                                        aria-selected="false">My Wallet</button>
+                                </li>
+                                <li class="nav-item col" role="presentation">
+                                    <button class="dashboard_tabbtn w-100 month_12btn" id="pills-twelve-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-twelve" type="button" role="tab"
+                                        aria-controls="pills-twelve" aria-selected="false">Download History</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Mobile Tab Button -->
+                    <div class="dashboard_mobiletabbtn desktop_none">
+                        <div class="dropdown  w-100">
+                            <button class="btn  w-100 dashboard_mobtab" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Overview<img src="./assest/media/sort_arrowdown.svg">
+                            </button>
+                            <div class="dropdown-menu w-100 p-0">
+                                <div class="nav nav-tabs mobtab_button_bar" id="nav-tab" role="tablist">
+                                    <button class="active dashboard_tabbtn w-100 month_1btn" id="pills-one-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab"
+                                        aria-controls="pills-one" aria-selected="true">Overview</button>
+                                    <button class="dashboard_tabbtn w-100" id="pills-three-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-three" type="button" role="tab"
+                                        aria-controls="pills-three" aria-selected="false">My Details & Password</button>
+                                    <button class="dashboard_tabbtn w-100" id="pills-six-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-six" type="button" role="tab" aria-controls="pills-six"
+                                        aria-selected="false">My Wallet</button>
+                                    <button class="dashboard_tabbtn w-100 month_12btn" id="pills-twelve-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-twelve" type="button" role="tab"
+                                        aria-controls="pills-twelve" aria-selected="false">Download History</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 1 End -->
+
+        <!-- Section 2 Start -->
+        <section class="dashboard_s2">
+            <div class="dashboard_c2 container">
+                <div class="dashboardtab_contentbar tab-content">
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Overview -->
+                        <div class="tab-pane fade show active dashboard_contentmain" id="pills-one" role="tabpanel"
+                            aria-labelledby="pills-one-tab">
+                            <div class="overview_tabcontent">
+                                <!-- Overview Left -->
+                                <div class="overview_left col">
+                                    <div class="overview_lefttop">
+                                        <h3 class="checkout_title">My details</h3>
+                                        <div class="mobile_none">
+                                            <div class="overview_lefttopbtnbar">
+                                                <button type="button"
+                                                    class="btn overview_btn">Update&nbsp;Details</button>
+                                                <button type="button"
+                                                    class="btn overview_btn">Update&nbsp;password</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form class="overview_leftbottom">
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="First name">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Last name">
+                                        </div>
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Email Address">
+                                            <input type="number" class="form-control checkout_textbox" id=""
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Address line 1">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Address line 2">
+                                        </div>
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Zip / Postal Code">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="City / town">
+                                        </div>
+                                        <input type="text" class="form-control checkout_textbox" id=""
+                                            placeholder="Country">
+                                        <input type="text" class="form-control checkout_textbox" id=""
+                                            placeholder="Current Password">
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="New Password">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Confirm New Password">
+                                        </div>
+                                    </form>
+                                    <div class="desktop_none">
+                                        <div class="overview_lefttopbtnbar">
+                                            <button type="button" class="btn overview_btn">Update&nbsp;Details</button>
+                                            <button type="button" class="btn overview_btn">Update&nbsp;password</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Overview Right -->
+                                <div class="overview_right col">
+                                    <div class="overview_lefttop">
+                                        <h3 class="checkout_title">My Wallet</h3>
+                                        <div class="overview_lefttopbtnbar">
+                                            <button type="button"
+                                                class="btn wallet_tablebtn">Transaction&nbsp;history</button>
+                                            <button type="button" class="btn overview_btn">Top&nbsp;up</button>
+                                        </div>
+                                    </div>
+                                    <div class="over_bacalanceamount">
+                                        <div class="balance_titlebar">
+                                            <p class="balance_titletext">Current Balance</p>
+                                            <p class="balance_titletext">Amount saved</p>
+                                        </div>
+                                        <div class="balance_titlebar">
+                                            <h4 class="balance_amounttext">4,862 Credits</h4>
+                                            <h4 class="balance_amountgreen">$2,671</h4>
+                                        </div>
+                                    </div>
+                                    <div class="checkout_midline"></div>
+                                    <p class="overview_loyality">Loyalty tier</p>
+                                    <div class="overview_progressbar">
+                                        <div class="progressbar_titlebar">
+                                            <p class="progressbar_title">Bronze</p>
+                                            <p class="progressbar_title">Silver</p>
+                                            <p class="progressbar_title">Gold</p>
+                                        </div>
+                                        <div class="progressbar_main">
+                                            <div class="progress_outline w-100">
+                                                <div class="progress_inner" role="progressbar" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress_imagebar w-100">
+                                                <img src="./assest/media/dashboard_bronze.png">
+                                                <img src="./assest/media/dashboard_silver.png">
+                                                <img src="./assest/media/dashboard_gold.png">
+                                            </div>
+                                        </div>
+                                        <div class="progressbar_discountbar">
+                                            <p class="progress_discounttext">$300+ Spend<br>get 5% Discount</p>
+                                            <p class="progress_discounttext">$600+ Spend<br>get 7% Discount</p>
+                                            <p class="progress_discounttext">$1,500+ Spend<br>get 12% Discount</p>
+                                        </div>
+                                    </div>
+                                    <div class="checkout_midline"></div>
+                                    <div class="loyality_bar d-flex">
+                                        <p class="overview_loyality">Usage Chart</p>&nbsp;<p
+                                            class="desktop_none overview_loyality">(swipe to see more)</p>
+                                    </div>
+                                    <!-- Graph -->
+                                    <div class="overview_graphbar table-responsive">
+                                        <canvas id="myChart" class="canva_graph"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- My Details & Password -->
+                        <div class="tab-pane fade dashboard_contentmain" id="pills-three" role="tabpanel"
+                            aria-labelledby="pills-three-tab">
+                            <div class="overview_tabcontent align-items-start">
+                                <!-- Details Left -->
+                                <div class="overview_left col">
+                                    <div class="overview_lefttop">
+                                        <h3 class="checkout_title">My details</h3>
+                                    </div>
+                                    <form class="overview_leftbottom">
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="First name">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Last name">
+                                        </div>
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Email Address">
+                                            <input type="number" class="form-control checkout_textbox" id=""
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Address line 1">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Address line 2">
+                                        </div>
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Zip / Postal Code">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="City / town">
+                                        </div>
+                                        <input type="text" class="form-control checkout_textbox" id=""
+                                            placeholder="Country">
+                                    </form>
+                                    <button type="button" class="btn overview_btn">Update&nbsp;Details</button>
+                                </div>
+                                <!-- Details Right -->
+                                <div class="overview_left details_right col">
+                                    <div class="overview_lefttop">
+                                        <h3 class="checkout_title">Update password</h3>
+                                    </div>
+                                    <form class="overview_leftbottom">
+                                        <input type="text" class="form-control checkout_textbox" id=""
+                                            placeholder="Current Password">
+                                        <div class="first_last">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="New Password">
+                                            <input type="text" class="form-control checkout_textbox" id=""
+                                                placeholder="Confirm New Password">
+                                        </div>
+                                    </form>
+                                    <button type="button" class="btn overview_btn">Update&nbsp;password</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- My Wallet -->
+                        <div class="tab-pane fade dashboard_contentmain" id="pills-six" role="tabpanel"
+                            aria-labelledby="pills-six-tab">
+                            <div class="overview_tabcontent">
+                                <!-- Wallet Left -->
+                                <div class="overview_right col">
+                                    <div class="overview_lefttop">
+                                        <h3 class="checkout_title">My Wallet</h3>
+                                        <div class="overview_lefttopbtnbar">
+                                            <button type="button" class="btn overview_btn">Top&nbsp;up</button>
+                                        </div>
+                                    </div>
+                                    <div class="over_bacalanceamount">
+                                        <div class="balance_titlebar">
+                                            <p class="balance_titletext">Current Balance</p>
+                                            <p class="balance_titletext">Amount saved</p>
+                                        </div>
+                                        <div class="balance_titlebar">
+                                            <h4 class="balance_amounttext">4,862 Credits</h4>
+                                            <h4 class="balance_amountgreen">$2,671</h4>
+                                        </div>
+                                    </div>
+                                    <div class="checkout_midline"></div>
+                                    <p class="overview_loyality">Loyalty tier</p>
+                                    <div class="overview_progressbar">
+                                        <div class="progressbar_titlebar">
+                                            <p class="progressbar_title">Bronze</p>
+                                            <p class="progressbar_title">Silver</p>
+                                            <p class="progressbar_title">Gold</p>
+                                        </div>
+                                        <div class="progressbar_main">
+                                            <div class="progress_outline w-100">
+                                                <div class="progress_inner" role="progressbar" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress_imagebar w-100">
+                                                <img src="./assest/media/dashboard_bronze.png">
+                                                <img src="./assest/media/dashboard_silver.png">
+                                                <img src="./assest/media/dashboard_gold.png">
+                                            </div>
+                                        </div>
+                                        <div class="progressbar_discountbar">
+                                            <p class="progress_discounttext">$300+ Spend<br>get 5% Discount</p>
+                                            <p class="progress_discounttext">$600+ Spend<br>get 7% Discount</p>
+                                            <p class="progress_discounttext">$1,500+ Spend<br>get 12% Discount</p>
+                                        </div>
+                                    </div>
+                                    <div class="checkout_midline"></div>
+                                    <div class="loyality_bar d-flex">
+                                        <p class="overview_loyality">Usage Chart</p>&nbsp;<p
+                                            class="desktop_none overview_loyality">(swipe to see more)</p>
+                                    </div>
+                                    <div class="overview_graphbar table-responsive">
+                                        <canvas id="myChart1" class="canva_graph"></canvas>
+                                    </div>
+                                </div>
+                                <!-- Wallet Right -->
+                                <div class="overview_right wallet_rightmob col">
+                                    <div class="overview_lefttop wallet_righttopmob">
+                                        <h3 class="checkout_title">Transaction History</h3>
+                                        <div class="dropdown">
+                                            <button class="btn  w-100 history_sortbtn" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sort By<img src="./assest/media/sort_arrowdown.svg">
+                                            </button>
+                                            <div class="dropdown-menu w-100 p-0">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                        <p class="desktop_none overview_loyality">Swipe to see more</p>
+                                    </div>
+                                    <div class="wallet_rightbottom table-responsive">
+                                        <table class="table table-borderless mb-0 wallet_table">
+                                            <thead class="wallet_table_header">
+                                                <tr class="align-middle">
+                                                    <th scope="col" class="text-center">
+                                                        <p class="wallet_tabletitle text-start">Invoice</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="wallet_tabletitle">Date</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="wallet_tabletitle">Total</p>
+                                                    </th>
+                                                    <th scope="col" class="text-center">
+                                                        <p class="wallet_tabletitle"></p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="wallet_table_body">
+                                                <tr class="align-middle">
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">#3066</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">Jan&nbsp;6,&nbsp;2024</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">$100</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                                src="./assest/media/download_icon.svg"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">#3066</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">Jan&nbsp;6,&nbsp;2024</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">$100</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                                src="./assest/media/download_icon.svg"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">#3066</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">Jan&nbsp;6,&nbsp;2024</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">$100</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                                src="./assest/media/download_icon.svg"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">#3066</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">Jan&nbsp;6,&nbsp;2024</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">$100</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                                src="./assest/media/download_icon.svg"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">#3066</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">Jan&nbsp;6,&nbsp;2024</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">$100</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                                src="./assest/media/download_icon.svg"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">#3066</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">Jan&nbsp;6,&nbsp;2024</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <p class="wallet_table_bodytext">$100</p>
+                                                    </td>
+                                                    <td class="wallet_table_bodysecondlast">
+                                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                                src="./assest/media/download_icon.svg"></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="wallet_paginationmain">
+                                        <button type="button" class="btn pagination_arrowbtn"><img
+                                                src="./assest/media/pagination_left.svg"></button>
+                                        <div class="pagination_numberbar">
+                                            <button type="button" class="btn pagination_numberbtn active">1</button>
+                                            <button type="button" class="btn pagination_numberbtn">2</button>
+                                            <button type="button" class="btn pagination_numberbtn">...</button>
+                                            <button type="button" class="btn pagination_numberbtn">9</button>
+                                            <button type="button" class="btn pagination_numberbtn">10</button>
+                                        </div>
+                                        <button type="button" class="btn pagination_arrowbtn"><img
+                                                src="./assest/media/pagination_right.svg"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Download History -->
+                        <div class="tab-pane fade dashboard_contentmain" id="pills-twelve" role="tabpanel"
+                            aria-labelledby="pills-twelve-tab">
+                            <div class="history_tabcontent">
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history1.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history2.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history3.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history4.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history5.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history6.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history7.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                                <div class="dashboard_historycard">
+                                    <div class="history_cardtop">
+                                        <img class="w-100 history_cardimg img-fluid"
+                                            src="./assest/media/download_history8.png">
+                                    </div>
+                                    <div class="history_cardbottom">
+                                        <div class="history_cardtitlebar">
+                                            <h4 class="history_cardtitle">Image name</h4>
+                                            <div class="history_cardorderbar">
+                                                <p class="overview_loyality">Order ID <span class="id_blue">#3061</span></p>
+                                                <p class="overview_loyality">Jan 5, 2024</p>
+                                            </div>
+                                        </div>
+                                        <p class="history_cardsubtitle">At id augue viverra magna sem commodo elementum
+                                            vivamus
+                                            tellus. Tempus id sit quam lacus dignissim in.</p>
+                                        <button type="button" class="btn wallet_tablebtn">Download<img
+                                                src="./assest/media/download_icon.svg"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 End -->
+    </div>
+
+    <!-- Dashboard End -->
+
+    <footer class="footer position-relative">
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <img src="./assest/media/footer-logo.png" alt="" class="img-fluid">
+                            </div>
+                            <ul>
+                                <li><a href="#">Browse</a></li>
+                                <li><a href="#">Pricing & Perks</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 p-mo-0">
+                        <div class="footer-right">
+                            <div class="d-none d-lg-block d-md-block">
+                                <img src="./assest/media/Mastercard.png" class="img-fluid">
+                            </div>
+                            <div class="footer-details">
+                                <h6>Placeholder Company Name LLC/h6></h6>
+                                <p>
+                                    Office No. XX, Placeholder Street – Placeholder City
+                                </p>
+                                <p>Support@PicturePlanet.com, +11 123 4567 890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-border">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-12 col-md-6 order-1 order-lg-0">
+                            <div class="p-copy">
+                                <p>© 2025 <a href="">PicturePlanet</a>. All rights reserved.</p>
+                                <img src="./assest/media/Mastercard.png" class="img-fluid d-block d-md-none d-lg-none">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-12 col-md-6">
+                            <div class="footer-bottom-right">
+                                <ul>
+                                    <li><a href="">Terms</a></li>
+                                    <li><a href="">Privacy</a></li>
+                                    <li><a href="">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assest/js/jquery-3.7.1.min.js"></script>
+    <script src="./assest/js/owl.carousel.js"></script>
+    <script src="./assest/js/popper.min.js"></script>
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/swiper-bundle.min.js"></script>
+    <script src="./assest/js/aos.js"></script>
+    <script src="./assest/js/appmain.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+    <!-- Overview Graph Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('myChart').getContext('2d');
+
+            var totalSavings = [1000, 1200, 1500, 2500, 2000, 1800, 2200, 3000, 2700, 3200, 4000, 4500];
+            var totalCredits = [2000, 2500, 3000, 5000, 4000, 3500, 4500, 7000, 5500, 6500, 8000, 9000];
+
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
+                        'Nov', 'Dec'
+                    ],
+                    datasets: [{
+                            label: 'Money Saved',
+                            data: totalSavings,
+                            backgroundColor: 'rgba(0,89,40)',
+                            borderColor: 'rgba(0,89,40)',
+                            borderWidth: 1,
+                            borderRadius: {
+                                topLeft: 5,
+                                topRight: 5
+                            }
+                        },
+                        {
+                            label: 'Credits',
+                            data: totalCredits,
+                            backgroundColor: 'rgba(228,228,228,0.7)',
+                            borderColor: 'rgba(228,228,228)',
+                            borderWidth: 1,
+                            borderRadius: {
+                                topLeft: 5,
+                                topRight: 5
+                            }
+                        }
+                    ]
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                                pointStyle: 'circle',
+                                boxWidth: 8,
+                                boxHeight: 8
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += context.raw;
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            grid: {
+                                display: false // Remove vertical grid lines
+                            },
+                            ticks: {
+                                autoSkip: false, // Ensure all month labels are shown
+                                maxRotation: 0, // Rotate labels to be horizontal
+                                minRotation: 0
+                            },
+                            title: {
+                                display: true,
+                                text: 'Month'
+                            }
+                        },
+                        y: {
+                            stacked: false,
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1000,
+                            },
+                            title: {
+                                display: true,
+                                text: 'Credits'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Wallet Graph Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('myChart1').getContext('2d');
+
+            var totalSavings = [1000, 1200, 1500, 2500, 2000, 1800, 2200, 3000, 2700, 3200, 4000, 4500];
+            var totalCredits = [2000, 2500, 3000, 5000, 4000, 3500, 4500, 7000, 5500, 6500, 8000, 9000];
+
+            var myChart1 = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
+                        'Nov', 'Dec'
+                    ],
+                    datasets: [{
+                            label: 'Money Saved',
+                            data: totalSavings,
+                            backgroundColor: 'rgba(0,89,40)',
+                            borderColor: 'rgba(0,89,40)',
+                            borderWidth: 1,
+                            borderRadius: {
+                                topLeft: 5,
+                                topRight: 5
+                            }
+                        },
+                        {
+                            label: 'Credits',
+                            data: totalCredits,
+                            backgroundColor: 'rgba(228,228,228,0.7)',
+                            borderColor: 'rgba(228,228,228)',
+                            borderWidth: 1,
+                            borderRadius: {
+                                topLeft: 5,
+                                topRight: 5
+                            }
+                        }
+                    ]
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                                pointStyle: 'circle',
+                                boxWidth: 8,
+                                boxHeight: 8
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += context.raw;
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            grid: {
+                                display: false // Remove vertical grid lines
+                            },
+                            ticks: {
+                                autoSkip: false, // Ensure all month labels are shown
+                                maxRotation: 0, // Rotate labels to be horizontal
+                                minRotation: 0
+                            },
+                            title: {
+                                display: true,
+                                text: 'Month'
+                            }
+                        },
+                        y: {
+                            stacked: false,
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1000,
+                            },
+                            title: {
+                                display: true,
+                                text: 'Credits'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
