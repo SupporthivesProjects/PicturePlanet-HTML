@@ -15,8 +15,79 @@
         justify-content: center;
         margin-top: 24px;
     }
+    .price-creator-section {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0px 80px;
+    }
 
-
+    .price-video video {
+        width: 581px;
+        height: 483px;
+        max-width: 100%;
+        margin-top: 12rem;
+        float: right;
+    }
+    .pricing-content {
+        padding: 80px 0px 80px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+    .pricing-content .btn {
+        width: 315px;
+        max-width: 100%;
+        padding: 0px 8px;
+        height: 56px;
+        margin: auto;
+    }
+    .price-img-left {
+        position: absolute;
+        left: 0px;
+        width: 273px;
+        height: 171px;
+        bottom: 36rem;
+        z-index: -1;
+    }
+    .price-img-right {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 403px;
+        height: 402px;
+        display: none;
+    }
+    .home-gaqs-section {
+        padding: 40px 0px;
+        background: var(--Grayscale-200---Near-White, #FAFAFA);
+        margin-bottom: 0px;
+    }
+    .unlock-the-plante-img {
+        position: static;
+        bottom: 32px;
+        right: 0px;
+        width: 847px;
+        height: 634px;
+    }
+    .home-bottom-setion {
+        max-width: 1920px;
+        padding: 32px 0px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .unlock-the-planet {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 37px;
+        padding: 0px 18px;
+    }
+    
     .errormain-page {
         height: 100vh;
         display: flex ;
@@ -62,7 +133,68 @@
         justify-content: flex-start;
         padding-left: 6px;
     }
-    
+    .row-card.row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 16px;
+        margin-bottom: 24px;
+        width: 359px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    .Rewarded-for-loyalty .card {
+        border-radius: 0px;
+        border: 0px;
+        width: 262px;
+        height: 256px;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .how-do-to video {
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        left: 0px;
+        top: -13px;
+        z-index: -1;
+    }
+    .why-video {
+        border: 9px solid #FFF;
+        height: 423px;
+        width: 500px;
+        margin-top: 134px;
+        margin-left: -22rem;
+        margin-bottom: 86px;
+        margin-right: -39px;
+        object-fit: cover;
+    }
+    .why-we-do img {
+        position: absolute;
+        right: 0px;
+        top: 32px;
+        width: 400px;
+        height: 483px;
+        z-index: -1;
+    }
+    .why-we-do {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .why-we-do-content {
+        width: 650px;
+        max-width: 100%;
+        margin-top: -32px;
+        margin: auto;
+    }
     
   
 }
@@ -75,9 +207,32 @@
         font-family: "DM Sans";
         font-size: 12px;
     }
+    .nav-brand-mo {
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .row-card.row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 16px;
+        margin-bottom: 24px;
+        width: 294px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    
+    
   
 }
-@media only screen and (min-width: 900px) and (max-width:999px) {
+@media only screen and (min-width: 850px) and (max-width:999px) {
     .header .navbar-nav {
         gap: 9px;
     }
@@ -93,6 +248,74 @@
         gap: 15px;
         margin-bottom: 0px;
     }
+    .contactu-bottom .btn-success {
+        height: 56px;
+        padding: 16px 20px
+    }
+    .unlock-the-planet {
+        width: 390px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 500px;
+    }
+    .price-creator-section::after {
+        content: "";
+        background: url(../media/pricing-top-img.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        height: 459px;
+        width: 392px;
+        z-index: -1;
+    }
+    .price-video video {
+        margin-top: 7rem;
+    }
+    .home-banner-content {
+        left: 1rem
+    }
+    .row-card.row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 16px;
+        margin-bottom: 24px;
+        width: 294px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    .how-do-to video {
+        width: 435px;
+        height: 616px;
+        position: absolute;
+        left: 0px;
+        top: 64px;
+        z-index: -1;
+    }
+    .why-video {
+        border: 9px solid #FFF;
+        height: 423px;
+        width: 400px;
+        margin-bottom: -13rem;
+        object-fit: cover;
+    }
+    .why-we-do img {
+        position: absolute;
+        right: 0px;
+        top: 32px;
+        width: 400px;
+        height: 483px;
+        z-index: -1;
+    }
+    
     
 }
 @media only screen and (min-width: 1000px) and (max-width:1080px) {
@@ -111,7 +334,69 @@
         gap: 15px;
         margin-bottom: 0px;
     }
-   
+    .contactu-bottom .btn-success {
+        height: 56px;
+        padding: 16px 26px
+    }
+    .unlock-the-planet {
+        width: 390px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 540px;
+    }
+    .price-creator-section::after {
+        content: "";
+        background: url(../media/pricing-top-img.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+        height: 459px;
+        width: 392px;
+        z-index: -1;
+    }
+    .price-video video {
+        margin-top: 15rem;
+    }
+    .home-banner-content {
+        left: 1rem
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 16px;
+        margin-bottom: 24px;
+        width: 246px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    .how-do-to video {
+        width: 496px;
+        height: 616px;
+        position: absolute;
+        left: 0px;
+        top: 64px;
+        z-index: -1;
+    }
+    .why-video {
+        border: 9px solid #FFF;
+        height: 423px;
+        width: 490px;
+        margin-bottom: -13rem;
+        object-fit: cover;
+    }
+    .why-we-do img {
+        position: absolute;
+        right: 0px;
+        top: 32px;
+        width: 450px;
+        height: 483px;
+        z-index: -1;
+    }
 }
 @media only screen and (min-width: 1100px) and (max-width:1190px) {
     .header .navbar-nav {
@@ -129,6 +414,66 @@
         gap: 25px;
         margin-bottom: 0px;
     }
+    .unlock-the-planet {
+        width: 430px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 600px;
+    }
+    .price-creator-section::after {
+        content: "";
+        background: url(../media/pricing-top-img.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+        height: 459px;
+        width: 392px;
+        z-index: -1;
+    }
+    .price-video video {
+        margin-top: 12rem;
+    }
+    .home-banner-content {
+        left: 2rem
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 24px;
+        margin-bottom: 24px;
+        width: 255px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    .how-do-to video {
+        width: 496px;
+        height: 616px;
+        position: absolute;
+        left: 0px;
+        top: 64px;
+        z-index: -1;
+    }
+    .why-video {
+        border: 9px solid #FFF;
+        height: 423px;
+        width: 528px;
+        margin-bottom: -13rem;
+        object-fit: cover;
+    }
+    .why-we-do img {
+        position: absolute;
+        right: 0px;
+        top: 32px;
+        width: 503px;
+        height: 483px;
+        z-index: -1;
+    }
+    
    
 }
 @media only screen and (min-width: 1200px) and (max-width:1290px) {
@@ -136,13 +481,153 @@
         gap: 9px;
     }
    
+    .unlock-the-planet {
+        width: 484px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 715px;
+    }
+    .price-creator-section::after {
+        content: "";
+        background: url(../media/pricing-top-img.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+        height: 459px;
+        width: 392px;
+        z-index: -1;
+    }
+    .price-video video {
+        margin-top: 14rem;
+    }
+    .home-banner-content {
+        left: 2rem
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 24px;
+        margin-bottom: 24px;
+        width: 272px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    .how-do-to video {
+        width: 496px;
+        height: 616px;
+        position: absolute;
+        left: 0px;
+        top: 64px;
+        z-index: -1;
+    }
+    .why-video {
+        border: 9px solid #FFF;
+        height: 423px;
+        width: 585px;
+        margin-bottom: -13rem;
+        object-fit: cover;
+    }
+    
 }
 @media only screen and (min-width: 1300px) and (max-width:1390px) {
     .header .navbar-nav {
         gap: 21px;
     }
+    .unlock-the-planet {
+        width: 484px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 715px;
+    }
+    .price-creator-section::after {
+        content: "";
+        background: url(../media/pricing-top-img.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+        height: 459px;
+        width: 392px;
+        z-index: -1;
+    }
+    .price-video video {
+        margin-top: 14rem;
+    }
+    .home-banner-content {
+        left: 2rem
+    }
+    .row-card .card {
+        display: flex;
+        padding: 24px 24px;
+        margin-bottom: 24px;
+        width: 271px;
+        height: 242px;
+        max-width: 100%;
+    }
+    .price-card h3 {
+        font-size: 19px;
+    }
+    .why-video {
+        border: 9px solid #FFF;
+        height: 423px;
+        width: 585px;
+        margin-bottom: -13rem;
+        object-fit: cover;
+    }
+    
 }
 @media only screen and (min-width: 1400px) and (max-width:1490px) {
+    .unlock-the-planet {
+        width: 484px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 715px;
+    }
+    .unlock-the-planet {
+        width: 594px;
+        max-width: 100%;
+    }
+    .img-collection video {
+        width: 719px;
+    }
+    .price-creator-section::after {
+        content: "";
+        background: url(../media/pricing-top-img.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+        height: 459px;
+        width: 392px;
+        z-index: -1;
+    }
+    .home-banner-content {
+        left: 2rem
+    }
+    .row-card .card {
+        display: flex;
+        padding: 32px 35px;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 0;
+        border: 2px solid var(--Grayscale-300---Lightest, #F1F1F1);
+        background: var(--Grayscale-200---Near-White, #FAFAFA);
+        border-radius: 0px;
+        margin: auto;
+        margin-bottom: 24px;
+        width: 306px;
+        height: 242px;
+        max-width: 100%;
+    }
    
 }
 @media only screen and (min-width: 1600px) and (max-width:1690px) {
