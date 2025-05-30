@@ -101,6 +101,11 @@
     width: 100%;
     padding: 10px 32px;
 }
+.btn_pro_filter.active {
+    border: 1px solid var(--Primary, #005928);
+    background: var(--Grayscale-200---Near-White, #FAFAFA);
+    box-shadow: 0px 0px 0px 3px rgba(35, 167, 44, 0.25);
+}
 .btn_pro_filter span {
     color: var(--Primary, #005928);
     font-family: "DM Sans";
@@ -138,6 +143,7 @@
     z-index: 1;
     background: #FFFFFF;
     width: 100%;
+    top: 69px;
 }
 .pls1_r1_r {
     display: flex;
@@ -394,7 +400,7 @@
 .btn_light_green {
     border: 1px solid rgba(55, 164, 79, 0.30);
     background: rgba(55, 164, 79, 0.10);
-    box-shadow: 0px 1px 2px 0px rgba(27, 62, 14, 0.25), 0px 0px 0px 1px #0E7413 inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px -1px 1px 1px rgba(62, 170, 35, 0.25) inset;
+    /* box-shadow: 0px 1px 2px 0px rgba(27, 62, 14, 0.25), 0px 0px 0px 1px #0E7413 inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px -1px 1px 1px rgba(62, 170, 35, 0.25) inset; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -472,7 +478,7 @@
     .btn_tab {
         border-radius: 40px;
         background: var(--Grayscale-400---Lighter, #E4E4E4);
-        padding: 8px 8px;
+        padding: 8px 16px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -485,7 +491,7 @@
         font-weight: 500;
         line-height: normal;
         text-transform: capitalize;
-        min-width: 96px;
+        min-width: unset;
         gap: 8px;
     }
     .pds1_btn_div {
@@ -545,6 +551,17 @@
         letter-spacing: -1px;
         text-transform: capitalize;
         margin-bottom: 16px;
+    }
+    .btn_search {
+        background: var(--Primary, #005928);
+        box-shadow: 0px 1px 2px 0px rgba(27, 62, 14, 0.25), 0px 0px 0px 1px #0E7413 inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px -1px 1px 1px rgba(62, 170, 35, 0.25) inset;
+    }
+    .pagination_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 21px;
+        align-items: stretch;
     }
 }
 
